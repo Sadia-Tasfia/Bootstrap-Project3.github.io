@@ -21,37 +21,307 @@
   <body>
     <!-- navbar starts here -->
     <header>
-      <nav class="navbar navbar-expand-md navbar-light fixed-top">
-        <div class="container">
-          <a class="navbar-brand"  href="#"> <img class="img-fluid" src="image/logo.png" alt="logo"> </a>
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container ">
+          <a class="navbar-brand d-flex align-items-center"  href="#"> <img class="img-fluid" src="image/dark.png" alt="logo"> </a>
           
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="trigger">
-            <div class="hamburger hamburger--slider is active">
-              <div class="hamburger-box">
-                <div class="hamburger-inner">
-                </div>
-              </div>
-            </div>
-          </div>
           
           <div class="collapse navbar-collapse" id="main-menu">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item"> <a class="nav-link active" href="#home"> Home </a></li>
+              <li class="nav-item"> <a class="nav-link active home" href="#home"> Home </a></li>
               <li class="nav-item"> <a class="nav-link" href="#about"> About </a></li>
               <li class="nav-item"> <a class="nav-link" href="#portfolio">Portfolio </a></li>
               <li class="nav-item"> <a class="nav-link" href="#service"> Service </a></li>
               <li class="nav-item"> <a class="nav-link" href="#blog"> Blog </a></li>
               <li class="nav-item"> <a class="nav-link" href="#contact"> Contact </a></li>
-               <button > <a class="btn main-btn" href="#">Download CV</a> </button>
+              <li> <a class="btn fill-btn" href="#">Download CV</a> </li>
             </ul>
           </div>
 
         </div>
       </nav>
     </header>
+    <!-- navbar ends here -->
+
+    <main>
+
+      <!-- banner starts here -->
+      <section class="home" id="home">
+        <div class="banner-wrapper p-md-5">
+          <div class="container h-100 ">
+            <div class="row h-100 d-flex justify-content-center align-items-center">
+
+              <div class="col-md-6 order-md-1 order-2">
+                <h3 class="text-orange"> Hello, I'm </h3>
+                <h3 class="name">James Smith</h3>
+                <p class="text-white">A <span class="text-green"> Creative Designer </span> From <span class="text-purple">New York</span></p>
+                <p class="text-white">I'm creative designer based in New York, and I'm very passionate and dedicated to my work.</p>
+
+                <div class="button d-flex">
+                  <button> <a class="btn main-btn" href="#"> About me</a></button>
+
+                  <div class="banner-icon pt-2">
+                    <ul class="list-unstyled d-flex ">
+                      <li class="banner-item  "> <a class="text-white" href="#"> <i class="fa-brands fa-facebook-f fa-1x "></i></a></li>
+                      <li class="banner-item  "> <a class="text-white" href="#"> <i class="fa-brands fa-instagram fa-1x"></i> </a> </li>
+                      <li class="banner-item  "> <a class="text-white" href="#"> <i class="fa-brands fa-linkedin fa-1x"></i> </a></li>
+                      <li class="banner-item  "> <a  class="text-white"href="#"> <i class="fa-brands fa-github fa-1x"></i> </a></li>
+                    </ul>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-6 order-md-2 order-1 ">
+                <div class="top-img">
+                  <div class="right-img">
+                    <img class="img-fluid ms-lg-5" src="image/avatar.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- banner ends here -->
+
+      <!-- progess starts here -->
+      <section class="progress-wrapper bg-dark pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+
+            <div class=" col-12 col-lg-4 mt-5">
+              <div class="card text-center bg-dark ">
+
+                <div class="card-icon mt-2">
+                  <img class="img-fluid" src="image/progress.png" alt="progress">
+                  <i class="fa-regular fa-paper-plane text-white"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Pixel Perfect</h5>
+                  <p class="progress-p">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mt-5">
+              <div class="card text-center bg-dark">
+
+                <div class="card-icon mt-2">
+                  <img class="img-fluid" src="image/progress1.png" alt="progress">
+                  <i class="fa-solid fa-brush  text-white"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-white">High Quality</h5>
+                  <p class="progress-p">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 mt-5">
+              <div class="card text-center bg-dark">
+
+                <div class="card-icon mt-2">
+                  <img class="img-fluid" src="image/progress2.png" alt="progress">
+                  <i class="fa-solid fa-lightbulb text-white"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-white">Awesome Idea</h5>
+                  <p class="progress-p">Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- progress ends here -->
+
+      <!-- about starts here -->
+      <section class="about-wrapper bg-dark pt-5 pb-5" id="about">
+        <div class="container ps-2">
+          <div class="row">
+            <img class="about-side-img" src="image/about-side.png" alt="about-side-img">
+              
+            <div class="col-12 col-lg-6 text-center about-start mb-5 me-lg-5 left-intro">
+              <img class="img-fluid" src="image/about2.png" alt="about-img">
+
+              <div class="about-inner1 mb-2">
+                <div class="inner-wrapper d-flex">
+                  <h3 class="text-success about-h3">18</h3> 
+                  <span class="text-light about-p">Year of <br> Success
+                  </span>
+                </div>
+              </div>
+                 
+              <div class="about-inner2">
+                <div class="inner-wrapper d-flex ">
+                  <h3 class="text-primary about-h3">9k</h3> 
+                  <span class="text-light about-p">Year of <br> Success
+                  </span>
+                </div>
+              </div>
+          
+            </div> 
+            <div class="col-12 col-lg-4 d-flex flex-column justify-content-center">
+              <h3 class="text-orange">I'm a Designer</h3>
+              <h3 class="text-light">I Can Design Anything You Want</h3>
+              <p class="p">Hello there! I'm a web designer, and I'm very passionate and dedicated to my work. With 20 years experience as a professional web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration.</p>
+              <span> <a class="btn main-btn" href="#"> Hire Me</a> </span>
+
+            </div>
+            <img class="about-side-img2" src="image/about3.png" alt="about-side-img2">
+
+          </div>
+        </div>
+      </section>
+      <!-- about ends here -->
+
+      <!-- portfolio starts here -->
+      <section class="portfolio-wrapper bg-dark pt-5 pb-5" id="portfolio" >
+        <div class="container">
+          <div class="row">
+
+            <img class="port-side-img" src="image/portside.png" alt="port-side-img">
+
+            <div class="col-sm-12 mb-5 text-center">
+              <h3 class="text-orange">Portfolio</h3>
+              <h3 class="text-white"> My Amazing Works </h3>
+              <p class="p"> Most common methods for designing websites that work well on desktop is responsive and adaptive design </p>
+            </div>
+            <div class="col-sm-12 mb-5 portfolio-list">
+              <ul class="list-unstyled d-flex justify-content-center flex-wrap mt-2">
+                <li> <a class="portfolio-link  active all" href="#"> All </a></li>
+                <li> <a class="portfolio-link " href="#"> Youtube </a></li>
+                <li> <a class="portfolio-link" href="#"> Vimeo </a></li>
+                <li> <a class="portfolio-link " href="#"> Soundcloud </a></li>
+                <li> <a class="portfolio-link " href="#"> Popup </a></li>
+                <li> <a class="portfolio-link " href="#"> Detail </a></li>
+              </ul>
+            </div>
+
+          </div>
+                
+          <div class="row" >
+            <div class="image col-lg-4 col-md-6 p-2">
+              <img class="img-fluid" src="image/port1.jpg" alt="port1">
+              <div class="detials-box">
+                <h6 class=" text-title mt-2">Mockup shape</h6>
+                <p> <a class="port-des m-0 p-0" href="#">Youtube </a></p>
+              </div>
+            </div>
+
+            <div class="image col-lg-4 col-md-6 p-2">
+              <img class="img-fluid" src="image/port2.jpg" alt="port2">
+              <div class="detials-box">
+                <h6 class="text-title mt-2"> Ave Bottle </h6>
+                <p> <a class="port-des m-0 p-0" href="#"> Vimeo </a></p>
+              </div>
+            </div>
+
+            <div class="image col-lg-4 col-md-6 p-2">
+              <img class="img-fluid" src="image/port3.jpg" alt="port3">
+              <div class="detials-box">
+                <h6 class="text-title mt-2"> Magic Art</h6>
+                <p> <a class="port-des m-0 p-0" href="#"> Soundcloud </a></p>
+              </div>
+            </div>
+
+            <div class="image col-lg-4 col-md-6 p-2">
+              <img class="img-fluid" src="image/port4.jpg" alt="port4">
+              <div class="detials-box">
+                <h6 class=" text-title mt-2">Blue Lemon </h6>
+                <p> <a class="port-des m-0 p-0" href="#">Popup </a></p>
+              </div>
+            </div>
+
+            <div class="image col-lg-4 col-md-6 p-2">
+              <img class="img-fluid" src="image/port5.jpg" alt="port5">
+              <div class="detials-box">
+                <h6 class=" text-title mt-2">Art Stone</h6>
+                <p> <a class="port-des  m-0 p-0" href="#">Popup </a></p>
+              </div>
+            </div>
+
+            <div class="image col-lg-4 col-md-6 p-2">
+              <img class="img-fluid" src="image/port6.jpg" alt="port6">
+              <div class="detials-box">
+                <h6 class="text-title mt-2">Global Evolution</h6> 
+                <p> <a class="port-des m-0 p-0" href="#">Details</a></p>
+              </div>
+            </div>
+
+            <img class="port-side-img2 img-fluid" src="image/portside2.png" alt="port-side-img">
+
+          </div>
+          
+
+
+        </div>
+
+      </section>
+      <!-- portfolio ends here -->
+
+      <!-- skills starts here -->
+      <section class="skill-wrapper bg-dark pt-5 pb-5">
+        <div class="container">
+          <div class="row p-2 mt-5">
+
+            <div class="col-12 col-lg-6 order-md-1 order-2 me-lg-4">
+              <div class="skill-left1 mt-5">
+                <span class="text-orange ">Design is life</span>
+                <h3 class="text-light mt-3 mb-5">I Develop Skills Regularly to Keep Me Update</h3>
+                <p class="p mb-5"> Most common methods for designing websites that work well on desktop is responsive and adaptive design</p>
+
+                <div class="progress_bar ">
+                  <ul class="list-unstyled" >
+                    <li class="mb-4">
+                      <h5> illustrator <span>% </span>  <span class="counter "> 95 </span></h5>
+                      <div class="bar"> <span class="illustrator"></span></div>
+                    </li>
+
+                    <li class="mb-4">
+                      <h5> photoshop <span>% </span>  <span class="counter "> 82 </span></h5>
+                      <div class="bar"> <span class="photoshop"></span></div>
+                    </li>
+
+                    <li>
+                      <h5> figma <span>% </span>  <span class="counter "> 75 </span></h5>
+                      <div class="bar"> <span class="figma"></span></div>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-4 order-md-2 order-1">
+              <img class="img-fluid mt-md-5 ms-lg-4" src="image/skill.jpg" alt="skill-img">
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- skills ends here -->
+      
+      <!-- service section start here -->
+      <section class="service-wrapper bg-dark pt-5 pb-5" id="service">
+        <div class="container">
+          <div class="row"> 
+            <div class="col-12 col-lg-6 mt-5">
+        
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+   
+    </main>
 
 
 

@@ -6,9 +6,14 @@
 :root{
   --orange: rgb(240, 93, 25);
   --white:white;
+  --purple: rgba(195, 98, 167, 0.66);
+  --green:rgba(113, 208, 113, 0.895);
+  --dark: #212529;
+  --grey:grey;
   --font-family: 'Fira Sans', sans-serif;
   --font-family2: 'Roboto', sans-serif;
   --font-family3: 'Montserrat', sans-serif;
+  --font-family4: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
   font-size: 2.65rem;
@@ -44,8 +49,27 @@ p{
   font-size: 1.15rem;
 }
 a{
-  font-size: 1.2rem;
+  font-size: 1.09rem;
   text-decoration: none;
+}
+.text-orange{
+  color: var(--orange);
+  font-size: 20px;
+  font-weight: 600;
+}
+.text-purple{
+  color: var(--purple) ;
+  font-size: 18px;
+}
+.text-green{
+  color: var(--green);
+  font-size: 18px;
+
+}
+.name{
+  font-family: var(--font-family4);
+  font-size: 44px;
+  color: var(--white);
 }
 .main-btn{
   background-color: var(--orange);
@@ -54,13 +78,34 @@ a{
   border-radius: 25px;
 
   font-size: 1rem;
-  padding: 0.6rem 1.6rem ;
+  font-weight: 600;
+  padding: 0.7rem 1.7rem ;
   margin: 5px;
 }
 .main-btn:hover{
   background-color: transparent;
   border: 1px solid var(--orange);
+  color: var(--white);
 
+}
+.fill-btn{
+  background-color: transparent;
+  border: 1px solid var(--orange);
+  color: var(--white);
+  border-radius: 25px;
+
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.6rem 1.6rem ;
+  margin: 5px;
+}
+.fill-btn:hover{
+  background-color: var(--orange);
+  color: var(--white);
+}
+.p{
+  color: var(--grey);
+  font-size: 1.1rem;
 }
 @media screen and(max-width:600px) {
   h1{
@@ -79,13 +124,364 @@ a{
     font-size:1.31rem;
   }
   h6{
-    font-size:1.1rem ;
+    font-size:1.12rem ;
   }
   p{
     font-size: 1rem ;
   }
   a{
-    font-size: 1rem;
+    font-size: 0.97rem;
+  }
+  .main-btn{
+    font-size: 0.8rem;
+    padding: 0.4rem;
+    margin: 2px;
+  }
+  .fill-btn{
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    margin: 2px;
+  }
+}
+
+/* navbar design starts here */
+.navbar{
+  background-color: transparent;
+}
+.container .navbar-brand{
+  height: 60px;
+  width: 120px;
+}
+.container .navbar-toggler{
+  border: 0;
+  box-shadow: none;
+}
+.container .collapse .navbar-nav .nav-item .nav-link{
+  color: var(--white);
+}
+.container .collapse .navbar-nav .nav-item .nav-link:hover{
+  color: var(--orange);
+}
+.container .collapse .navbar-nav .nav-item .home{
+  color: var(--orange);
+  font-weight: 600;
+}
+@media screen and (max-width:800px) {
+  .navbar{
+    background-color: var(--dark);
+  }
+}
+@media screen and (max-width:600px) {
+  .navbar{
+    background-color: var(--dark);
+  }
+  .container .navbar-brand{
+    width: 80px;
+    padding: 0;
+    margin-left: 0;
+  }
+  .container .navbar-toggler{
+    padding: 0;
+    margin-right: 0;
+  }
+}
+/*navbar design ends here  */
+
+/* banner design starts here */
+.banner-wrapper{
+  background-image: url("image/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 800px;
+}
+.banner-wrapper button{
+  border: none;
+  background-color: transparent;
+}
+.banner-wrapper .banner-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-wrapper .banner-icon ul li {
+  padding: 0 0 0 20px;
+}
+.banner-wrapper .banner-icon ul li a{
+  margin: 0 0.3rem;
+}
+.banner-wrapper .top-img .right-img .img-fluid{
+  margin: 60px 0;
+  width: 70%;
+}
+@media screen and (max-width:800px) {
+  .banner-wrapper{
+    height: auto;
+    padding: 25px 5px;
+  }
+}
+@media screen and (max-width:600px) {
+  .banner-wrapper .banner-icon ul li {
+    padding: 0;
+  }
+  .banner-wrapper .top-img .right-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+  }
+}
+/* banner ends here */
+
+/* progress design starts here */
+.progress-wrapper .card{
+  border: none;
+}
+
+.progress-wrapper .card-body .progress-p{
+  color: var(--grey);
+  font-size: 1.1rem;
+}
+  
+.progress-wrapper .card-icon {
+  position: relative;
+}
+.progress-wrapper .card-icon .img-fluid{
+  width: 23%;
+}
+.progress-wrapper i{
+  position: absolute;
+  left: 47%;
+  top: 32%;
+  font-size: 2rem;
+}
+
+@media screen and (max-width:500px) {
+  .progress-wrapper .card-icon .img-fluid{
+    width: 43%;
+  }
+}
+/* progress design ends here */
+
+/* about design starts here */
+.about-wrapper {
+  position: relative;
+}
+.about-wrapper  .about-side-img{
+  position:absolute;
+  visibility: visible;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 180px;
+  
+}
+.about-wrapper  .about-side-img2{
+  position:absolute;
+  visibility: visible;
+  bottom: 60px;
+  right: 40px;
+  width: 220px;
+  height: 180px;
+}
+
+.left-intro{
+  position: relative;
+}
+.about-inner1{
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+.about-inner2{
+  position: absolute;
+  bottom: 10%;
+  right: 8%;
+}
+.inner-wrapper { 
+  background-color: #4b4f5c;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.inner-wrapper  .about-h3{
+  font-size: 45px;
+  padding: 0 8px;
+}
+
+.inner-wrapper  .about-p{
+  font-size: 18px;
+  text-align: left;
+}
+
+@media screen and (max-width:600px) {
+  .about-inner1{
+    display: block;
+    position: static;
+    margin-top: 0.7rem;
+    
+  }
+  .about-inner2{
+    display: block;
+    position: static;
   }
 
+  .inner-wrapper{
+    padding: 1.1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .inner-wrapper  .about-h3{
+    font-size: 2.5rem;
+    padding: 0 4px;
+  }
+
+  .about-wrapper .about-side-img{
+    visibility: hidden;
+  }
+  .about-wrapper .about-side-img2{
+    visibility: hidden;
+  }
 }
+/* about design ends here */
+
+/* portfolio design starts here */
+.portfolio-wrapper  .portfolio-link{
+  color: var(--white);
+  font-size: 1.07rem;
+  padding: 0.9rem;
+}
+.portfolio-wrapper  .portfolio-link:hover{
+  color: var(--orange);
+}
+.portfolio-wrapper .all{
+  color: var(--orange);
+  font-weight: 600;
+}
+.portfolio-wrapper .image{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-wrapper .image .detials-box{
+  position:absolute;
+  top: 50%;
+  left: 0%;
+  /* width: 100%; */
+  height: 100%;
+  color: var(--white);
+  opacity: 0;
+  transition: opacity 0.22s;
+}
+.portfolio-wrapper .detials-box:hover{
+  opacity: 1;
+}
+.portfolio-wrapper .text-title{
+  font-weight: bold;
+}
+.portfolio-wrapper .port-des{
+  color: var(--orange);
+}
+
+.portfolio-wrapper {
+  position: relative;
+}
+.portfolio-wrapper  .port-side-img{
+  position:absolute;
+  visibility: visible;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 180px;
+}
+.portfolio-wrapper  .port-side-img2{
+  position:absolute;
+  visibility: visible;
+  bottom: 5px;
+  right: 40px;
+  width: 220px;
+  height: 180px;
+}
+
+@media screen and (max-width:600px) {
+  .portfolio-wrapper  .portfolio-link{
+    padding: 0.3rem;
+  }
+  .portfolio-wrapper .image .detials-box{
+    left: 28%;
+    top: 38%;
+  }
+  .portfolio-wrapper .port-side-img {
+    visibility: hidden;
+  }
+  .portfolio-wrapper .port-side-img2 {
+    visibility: hidden;
+  }
+}
+/* portfolio design ends here */
+
+/* skills design starts here */
+.progress_bar h5{
+  color: var(--white) ;
+  font-size: 17px;
+  font-weight: 300;
+}
+.progress_bar h5 span{
+  float: right;
+  padding-bottom: 4px;
+  font-weight: 300;
+}
+.bar{
+  height: 10px;
+  background:rgba(170, 170, 170, 0.34);
+  border-radius:5px ;
+  margin: 5px 0;
+}
+.bar span{
+  height: 10px;
+  float: left;
+  border-radius: 5px;
+}
+.illustrator{
+  background: var(--orange);
+  width: 95%;
+  animation: illustrator 0.5s 3s linear forwards;
+}
+@keyframes illustrator {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 95%;
+  }
+}
+.photoshop{
+  background: var(--green);
+  width: 82%;
+  animation: photoshop 0.5s 3s linear forwards;
+}
+@keyframes photoshop {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 82%;
+  }
+}
+.figma{
+  background: var(--purple);
+  width: 75%;
+  animation: figma 0.5s 3s linear forwards;
+}
+@keyframes figma {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 75%;
+  }
+}
+/* skills design ends here */
