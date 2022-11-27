@@ -52,7 +52,7 @@ p{
   font-size: 1.15rem;
 }
 a{
-  font-size: 1.09rem;
+  font-size: 1.11rem;
   text-decoration: none;
 }
 .text-orange{
@@ -84,6 +84,7 @@ a{
   font-weight: 600;
   padding: 0.7rem 1.7rem ;
   margin: 5px;
+  transition: all 0.53s;
 }
 .main-btn:hover{
   background-color: transparent;
@@ -149,7 +150,7 @@ a{
 
 /* navbar design starts here */
 .navbar{
-  background-color: transparent;
+  background-color: transparent;  
 }
 .container .navbar-brand{
   height: 60px;
@@ -172,11 +173,13 @@ a{
 @media screen and (max-width:800px) {
   .navbar{
     background-color: var(--dark);
+    box-shadow: 0 0 10px rgb(19, 16, 16);
   }
 }
 @media screen and (max-width:600px) {
   .navbar{
     background-color: var(--dark);
+    box-shadow: 0 0 10px rgb(19, 16, 16);
   }
   .container .navbar-brand{
     width: 80px;
@@ -375,6 +378,7 @@ a{
 }
 .portfolio-wrapper .image img{
   width: auto;
+  transition: 0.56s;
   /* padding: 10px; */
 }
 .portfolio-wrapper .image img:hover{
@@ -392,7 +396,7 @@ a{
   border-radius: 5px;
   padding:5px;
   opacity: 0;
-  transition: opacity 0.22s;
+  transition: opacity 0.33s;
 }
 .portfolio-wrapper .detials-box:hover{
   opacity: 1;
@@ -592,10 +596,11 @@ a{
 /* service design ends here */
 
 /* testimonial design starts here */
-.testimonial-wrapper .carousel{
+/* .testimonial-wrapper .carousel{
   height: 600px;
-}
-.testimonial-wrapper .carousel-caption{
+} */
+
+.testimonial-wrapper .sec{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -617,7 +622,7 @@ a{
 
 .testimonial-wrapper .carousel-item{
   background-color: var(--dark);
-  height: 500px;
+  height: auto;
 }
 .testimonial-wrapper {
   position: relative;
@@ -632,12 +637,12 @@ a{
 }
 
 @media screen and (max-width:600px) {
-  .testimonial-wrapper .carousel-caption{
+  .testimonial-wrapper .sec{
     margin: 0.7rem;
     padding: 0.7rem ;
     
   }
-  .testimonial-wrapper .carousel-caption .hire-title{
+  .testimonial-wrapper .sec .hire-title{
   font-size: 1.3rem;
   }
 
@@ -646,7 +651,7 @@ a{
   }
   .testimonial-wrapper .client-img img{
     border-radius: 80%;
-    height: 1.2rem;
+    height: 2.3rem;
   }
   .testimonial-wrapper .client-body .nam{
     font-size:0.5rem;
@@ -655,7 +660,7 @@ a{
     font-size:0.5rem;
   }
   .carousel{
-    height: 200px;
+    height: auto;
     width: 100%;
     object-fit: contain;
   }
@@ -1025,3 +1030,4 @@ a{
 .copyright ul li a:hover{
   color: var(--orange);
 }
+/* copyright ends here */
