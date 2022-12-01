@@ -398,7 +398,7 @@ a{
   opacity: 0;
   transition: opacity 0.33s;
 }
-.portfolio-wrapper .detials-box:hover{
+.portfolio-wrapper .image:hover .detials-box{
   opacity: 1;
 }
 .portfolio-wrapper .text-title{
