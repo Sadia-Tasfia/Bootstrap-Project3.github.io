@@ -389,8 +389,6 @@ a{
   display: inline-block;
   top: 40%;
   left: 35%;
-  /* width: 100%; */
-  /* height: 100%; */
   color: var(--white);
   background-color: var(--white);
   border-radius: 5px;
@@ -398,6 +396,7 @@ a{
   opacity: 0;
   transition: opacity 0.33s;
 }
+
 .portfolio-wrapper .image:hover .detials-box{
   opacity: 1;
 }
